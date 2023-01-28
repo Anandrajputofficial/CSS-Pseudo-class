@@ -1,0 +1,55 @@
+(1) Why is it called a pseudo-class? 
+
+A pseudo-class is called such because it is used to style certain states of an element in CSS, but does not actually exist as a "class" in the HTML code. It is "pseudo" in the sense that it is not a real class, but a way to apply styles to elements based on certain conditions or states. Examples of pseudo-classes include :hover, :active, and :focus. These can be used to change the appearance of elements when they are hovered over, clicked on, or have focus, respectively.
+
+(2) What are gradients in CSS?
+
+Gradients in CSS are a way to create a smooth transition between two or more colors. There are two types of gradients: linear and radial.
+
+A linear gradient starts with one color and gradually transitions to another color in a straight line. The direction of the gradient can be set using the to keyword and an angle or a set of keywords (e.g. to top, to bottom right).
+
+A radial gradient starts with one color in the center and gradually transitions to another color in a circular or elliptical shape. The position of the center and the shape of the gradient can be set using CSS properties.
+
+Gradients can be set as the background for an element using the background-image property, and can also be set as the background property of an element.
+
+Example :
+
+css
+
+background: linear-gradient(to bottom, #ff0000, #0000ff);
+This creates a linear gradient that starts with red at the top and gradually transitions to blue at the bottom.
+
+(3) What are different types of transitions in CSS?
+
+In CSS, transitions are used to smoothly change the value of a CSS property over a specified duration of time. The basic syntax for a transition is as follows:
+
+css
+
+transition: property duration timing-function delay;
+
+
+property is the CSS property that will be transitioned.
+duration is the length of time that the transition will take, in seconds (s) or milliseconds (ms).
+timing-function is the rate of change over time. It can be set as ease, linear, ease-in, ease-out, ease-in-out, or a cubic-bezier function.
+delay is the amount of time that should elapse before the transition begins, in seconds (s) or milliseconds (ms).
+The most commonly used transition properties are:
+
+transition-property : the CSS property to be transitioned
+transition-duration : the duration of the transition
+transition-timing-function : the rate of change over time
+transition-delay : the delay before the transition starts
+Another important property is all which can be used to transition all the properties at once.
+
+Example :
+
+css
+
+button {
+    background-color: green;
+    transition: background-color 1s ease-in-out;
+}
+
+button:hover {
+    background-color: blue;
+}
+This will change the background color of the button from green to blue over the course of 1 second with a easing-in-out effect when hovered over.
